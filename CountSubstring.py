@@ -1,8 +1,8 @@
-s = "Heelo ayush How are Ayush Ayush"
+s = "Heelo Ayush How are Ayush Ayush"
 sub = "Ayush"
-# count = 0
-# for i in s:
-#  if sub in s:
-#
-# print(count)
-print(s.count(sub))
+count = 0
+s1 = s.split(" ")
+for i in s1:
+    if i == sub:
+        count+=1
+print(count)
