@@ -1,3 +1,10 @@
+'''
+Map(): Used map when you have to perform a function to each element in an iterable[list,tuple] and
+        produce a new iterable
+filter(): Use filter when you have to selectively include elements based on a condition.
+reduce(): Use reduce when you have to do cumulative functions(add,products) and import from functools
+'''
+
 from functools import reduce
 
 res = lambda x:x+10
@@ -17,5 +24,10 @@ print(re)
 f_l = list(map(lambda x : x*2,l))
 print(f_l)
 
-great =  reduce(lambda a,b: a if a>b else b, l)
+l1 = [11,12,1,2,4,32,21,20]
+great =  reduce(lambda a,b: a if a>b else b, l1)
 print(great)
+
+result = filter(lambda x:x%2==0,range(1,101))
+for i in result:
+    print(i,end = " ")

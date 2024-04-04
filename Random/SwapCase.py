@@ -5,4 +5,4 @@ for i in range(len(s)):
         s1 = s[i].upper()
     else:
         s1 = s[i].lower()
-    print(s1)
+    print(s1 , end = "")

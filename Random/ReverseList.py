@@ -3,3 +3,9 @@ new_l =[]
 for i in range(len(l)-1,-1,-1):
     new_l.append(l[i])
 print(new_l)
+
+l1 = []
+if not l1:
+    print("empty")
+else:
+    print("Not emopty")

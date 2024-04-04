@@ -1,16 +1,22 @@
-arr = [10,3,19,14,2,13]
-print("Maximum is : ",max(arr) , "\nMinimum is: " , min(arr))
+from functools import reduce
 
-def max(arr):
- max = arr[0]
- for i in range(len(arr)):
-    if max<arr[i]:
-        max = arr[i]
-    return max
 
-def min(arr):
- min=arr[0]
- for i in range(len(arr)):
-    if min>arr[i]:
-        min = arr[i]
-    return min
+def max_and_min(arr):
+    min_val = arr[0]
+    max_val = arr[0]
+
+    for i in arr[1:]:
+        if i>max_val:
+            max_val=i
+        elif i<min_val:
+            min_val=i
+    print(max_val, min_val)
+
+arr = [11,4,12,23,19,2]
+max_and_min(arr)
+
+larg = reduce(lambda a,b: a if a>b else b,arr)
+small = reduce(lambda a,b: a if a<b else b,arr)
+print("Maximum ele : ",larg)
+print("Minimum ele: ",small)
+

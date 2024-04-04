@@ -1,8 +1,8 @@
-def reverse(s):
-    str = ""
+def reverseString(s):
+    str1 = ""
     for i in s:
-        str = i + str
-    return str
+        str1 = i + str1
+    return str1
 
 s = "Ayussh Srivastava"
 
@@ -10,7 +10,7 @@ print("The original string is : ", end="")
 print(s)
 
 print("The reversed string(using loops) is : ", end="")
-print(reverse(s))
+print(reverseString(s))
 
 
 print(s[::-1])

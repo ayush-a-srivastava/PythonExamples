@@ -1,3 +1,3 @@
-with open('text.txt','r') as file:
+with open('text.txt') as file:
     data = file.read().replace("\n"," ")
     print(data)
