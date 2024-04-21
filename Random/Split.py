@@ -5,3 +5,6 @@ month = s.split(" ")[0]
 year = s.split(" ")[1]
 print(month)
 print(year)
+
+s1 = "hello ayush how are You?"
+print(s1.title())

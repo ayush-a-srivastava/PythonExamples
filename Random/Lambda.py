@@ -13,7 +13,7 @@ print(res(2))
 l_cube = lambda x:x*x*x
 print(l_cube(4))
 
-sq = [lambda arg =x:arg*10 for x in range(1,5)]
+sq = [lambda x =x:x*10 for x in range(1,5)]
 for i in sq:
     print(i())
 
