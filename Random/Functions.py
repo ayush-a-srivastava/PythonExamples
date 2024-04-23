@@ -1,4 +1,4 @@
-def add(num1=0,num2=0):
+def add(num1,num2):
     if (type(num1) is not int or type(num1) is not int):
         return
     return num1 + num2

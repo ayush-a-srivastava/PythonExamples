@@ -5,11 +5,11 @@ print(re.search(r"\d{3}", "hello1234"))
 
 
 def validate_email(email):
-    pattern = r'^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9]{3}$'
+    pattern = r'^[a-zA-Z0-9._%-]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]{3}$'
     return re.match(pattern,email) is not None
 
 
-pattern1 = "ayush.a.sriavstava@gmail.com"
+pattern1 = "ayush.a.srivastava@gmail.com"
 pattern2 = "invalid.com"
 
 print("Email is: ",validate_email(pattern1))
@@ -36,7 +36,7 @@ res = s.split(pattern)
 print(res)
 
 # -----------------------------------------------------------------------
-s1 = "filename.txt"
-pat = r'\.txt'
+s1 = "filename.txt containes .txt many times .txt manhy many"
+pat = r'many'
 print(re.search(pat,s1))
-print(re.findall(pat,s1))
+print(re.findall(pat,s1), len(re.findall(pat,s1)))

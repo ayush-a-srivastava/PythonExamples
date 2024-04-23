@@ -25,8 +25,10 @@ f_l = list(map(lambda x : x*2,l))
 print(f_l)
 
 l1 = [11,12,1,2,4,32,21,20]
-great =  reduce(lambda a,b: a if a>b else b, l1)
-print(great)
+max =  reduce(lambda a,b: a if a>b else b, l1)
+min =  reduce(lambda a,b: a if a<b else b, l1)
+print("Maximum: ",max)
+print("Minimum: ",min)
 
 result = filter(lambda x:x%2==0,range(1,101))
 for i in result:
