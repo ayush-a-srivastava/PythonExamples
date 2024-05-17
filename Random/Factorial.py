@@ -1,4 +1,4 @@
-num = 6
+num = -43
 fact = 1
 n = num
 while(n>1):

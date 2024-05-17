@@ -17,6 +17,7 @@ max_and_min(arr)
 
 larg = reduce(lambda a,b: a if a>b else b,arr)
 small = reduce(lambda a,b: a if a<b else b,arr)
+print("The given list is: ",arr)
 print("Maximum ele : ",larg)
 print("Minimum ele: ",small)
 
