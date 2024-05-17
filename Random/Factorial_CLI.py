@@ -17,4 +17,4 @@ while n > 1:
     fact = fact * n
     n = n - 1
 
-print(fact)
+print(f"The Factorial of {num} is :",fact)
