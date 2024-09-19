@@ -6,7 +6,7 @@ def get_current_weather():
     print(" ******* Get Current Weather *******")
     city = input("Enter the city name: ")
     request_url = (f'https://api.openweathermap.org/data/2.5/weather?appid={'API_KEY'}&q={city}&units=imperial')
-
+    # request_url = (f'https://pro.openweathermap.org/data/2.5/forecast/climate?q={city}&appid={API key}')
     weather_data = requests.get(request_url).json()
     # print(weather_data)
     print(f'Current weather for {weather_data['name']}:')

@@ -24,5 +24,5 @@ for lower in range(97,123):
 all_characters = Upper_char_list + lower_char_list + digit_list + symbols_list
 length = int(input("Enter the password length : "))
 password = generate_password(length)
-print("Generated Password : ", password)
+print("Generated Password :", password)
 
