@@ -16,4 +16,4 @@ def key_multi_args(**kwargs):
     print(kwargs)
     print(type(kwargs))
 
-key_multi_args(name="ayush",age=26)
+key_multi_args(name="ayush",age=23)

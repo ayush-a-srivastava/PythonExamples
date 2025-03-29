@@ -21,3 +21,10 @@ print("The given list is: ",arr)
 print("Maximum ele : ",larg)
 print("Minimum ele: ",small)
 
+arr = [11,4,12,150,23,-1,19,2]
+max = arr[0]
+for i in arr:
+    if i > max:
+        max = i
+print("Maximum number: ", max)
+

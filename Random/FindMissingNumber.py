@@ -1,6 +1,4 @@
 
-# Example 1
-
 def find_missing(l):
     if not l:
         print("Empty")

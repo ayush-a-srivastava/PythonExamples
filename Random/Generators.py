@@ -3,17 +3,29 @@ Generators are the function when you call this function it will give the items o
 untill you ask for the next one.
 '''
 
-def count_to_ten():
-    n=1
-    while(n<=10):
-        yield n
-        n+=1
+# def count_to_ten():
+#     n=1
+#     while(n<=10):
+#         yield n
+#         n+=1
+#
+# counter = count_to_ten()
+#
+# print(next(counter))
+# print(next(counter))
+# print(next(counter))
+# print(next(counter))
+#
 
-counter = count_to_ten()
+def fibonacci():
+    a,b= 0,1
+    while True:
+        yield a
+        a, b = b, a + b
 
-print(next(counter))
-print(next(counter))
-print(next(counter))
-print(next(counter))
-
+fib = fibonacci()
+print(next(fib))
+print(next(fib))
+print(next(fib))
+print(next(fib))
 
