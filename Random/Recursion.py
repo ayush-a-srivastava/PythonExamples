@@ -1,11 +1,17 @@
 def add_one(num):
-    if num>=9:
-        return num + 1
+    print(f"Current number: {num}")
+
+    if num >= 9:
+        result = num + 1
+        print(f"Reached 9 or greater. Final result: {result}")
+        return result
 
     total = num + 1
-    print(total)
+    print(f"Adding 1. New total: {total}")
 
     return add_one(total)
 
-add = add_one(0)
-print(add)
+
+# Test the function
+result = add_one(0)
+print(f"Final result: {result}")

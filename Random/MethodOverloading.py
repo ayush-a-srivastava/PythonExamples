@@ -11,7 +11,7 @@ def display(value):
 
 
 @display.register(int)
-def _(value):
+def ar(value):
     print("Integer: ", value)
 
 @display.register(str)

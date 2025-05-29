@@ -17,3 +17,14 @@ arr = [1, 2, 0, 4, 3, 0, 5, 0]
 # print(res)
 ob = Solution()
 ob.pushZeroesToEnd(arr)
+
+l = [9,8,7,0,3,0,2,0,7,0,2,0,1]
+zero_res = []
+unzero = []
+for i in l:
+    if i == 0:
+        zero_res.append(i)
+    else:
+        unzero.append(i)
+        rev = unzero[::-1]
+print(zero_res + rev)

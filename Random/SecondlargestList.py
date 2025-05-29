@@ -4,4 +4,4 @@ print(arr[-2])
 
 
 sub = [x for x in arr if x<max(arr)]
-print(max(sub))
+print(sub[-1])
